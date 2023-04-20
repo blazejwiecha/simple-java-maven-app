@@ -26,9 +26,10 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
-       stage('Finish line') {
+        
+        stage('Finish line') {
             steps {
-                echo 'This is the end'
+                echo "This is the end"
             }
         }
     }
